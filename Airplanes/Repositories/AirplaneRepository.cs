@@ -60,18 +60,19 @@ namespace Airplanes.Repositories
 
         public async Task UpdateAirplane(Guid id, AirplaneForUpDateDto airplane)
         {
-           
             string sqlQuery = "UPDATE Airplane SET Pname = @Pname, Pseats = @Pseats, Pmaxspeed = @Pmaxspeed, Pheavyload = @Pheavyload WHERE Pid = @Pid";
             var parameters = new DynamicParameters();
             parameters.Add("Pid", id, DbType.Guid);
             parameters.Add("Pname", airplane.Pname, DbType.String);
-            parameters.Add("Pseats", airplane.Pseat, DbType.Int32);
-            parameters.Add("Pmaxspeed", airplane.Pmax_speed, DbType.Double);
-            parameters.Add("Pheavyload", airplane.Pheavy_load, DbType.Double);
+            parameters.Add("Pseats", airplane.Pseats, DbType.Int32);
+            parameters.Add("Pmaxspeed", airplane.Pmaxspeed, DbType.Int32);
+            parameters.Add("Pheavyload", airplane.Pheavyload, DbType.Double);
+            
             using (var connection = _dbContext.CreateConnection())
             {
                 await connection.ExecuteAsync(sqlQuery, parameters);
             }
+            //throw new NotImplementedException();
         }
 
 

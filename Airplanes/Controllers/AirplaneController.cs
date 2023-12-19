@@ -1,5 +1,6 @@
 ﻿using Airplanes.Contracts;
 using Airplanes.Dtos;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Airplanes.Controllers
@@ -11,6 +12,7 @@ namespace Airplanes.Controllers
 
 
     [Route("api/[controller]")]
+    [EnableCors("AllowAny")]
     [ApiController]
     public class AirplaneController : ControllerBase
     {
@@ -21,6 +23,7 @@ namespace Airplanes.Controllers
             _logger = logger;
             _airplane = airplane;
         }
+        [EnableCors("AllowAny")]
         [HttpGet]
         public async Task<IActionResult> GetAllAirplanes()
         {
@@ -39,6 +42,7 @@ namespace Airplanes.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
+        [EnableCors("AllowAny")]
         [HttpGet]
         [Route("{pid}")]
         public async Task<IActionResult> GetCounterById(Guid pid)

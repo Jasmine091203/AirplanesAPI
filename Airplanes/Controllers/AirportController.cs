@@ -1,6 +1,7 @@
 ﻿using Airplanes.Contracts;
 using Airplanes.Dtos;
 using Airplanes.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics.Metrics;
 using System.Security.Cryptography;
@@ -8,6 +9,7 @@ using System.Security.Cryptography;
 namespace DepartmentStore.Controllers
 {
     [Route("api/[controller]")]
+    [EnableCors("AllowAny")]
     [ApiController]
     public class AirportController : ControllerBase
     {
@@ -18,6 +20,7 @@ namespace DepartmentStore.Controllers
             _logger = logger;
             _airport = airport;
         }
+        [EnableCors("AllowAny")]
         [HttpGet]
         public async Task<IActionResult> GetAllAirports()
         {
@@ -36,6 +39,7 @@ namespace DepartmentStore.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
+        [EnableCors("AllowAny")]
         [HttpGet]
         [Route("{aid}")]
         public async Task<IActionResult> GetAirportById(Guid aid)

@@ -8,6 +8,6 @@ namespace Airplanes.Dtos
         public string Pname { get; set; }
         [Required] public int Pseats { get; set; }
         [Required] public int Pmaxspeed { get; set; }
-        [Required] public float Pheavyload { get; set; }
+        [Required] public int Pheavyload { get; set; }
     }
 }
