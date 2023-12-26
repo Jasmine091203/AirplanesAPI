@@ -8,6 +8,6 @@ namespace Airplanes.Dtos
         public int Pid { get; set; }
         [Required]
         public string Pname { get; set; }
-        public List<String> Airplane { get; set; } = new List<String>();
+        public List<String> Airplanes { get; set; } = new List<String>();
     }
 }
