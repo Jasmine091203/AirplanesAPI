@@ -16,7 +16,8 @@ builder.Services.AddCors(
     options => { 
         options.AddPolicy(name: "AllowAny", 
             policy => { 
-                policy.WithOrigins("https://localhost:7061","http://localhost:5149")
+                policy.WithOrigins("https://localhost:52574", "http://localhost:52575")
+                //policy.WithOrigins("https://localhost:7061", "http://localhost:5149")
                 .AllowAnyHeader()   //允許任何標頭
                 .AllowAnyMethod()  //允許任何 HTTP 方法
                 .AllowAnyOrigin();

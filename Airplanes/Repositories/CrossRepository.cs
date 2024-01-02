@@ -25,7 +25,7 @@ namespace Airplanes.Repositories
                 var multi = await connection.QueryMultipleAsync(sqlQuery, new { Id = id });
                 var airport = await multi.ReadSingleOrDefaultAsync<AirplaneOfAirport>();
                 if (airport != null)
-                    airport.Airplane = (await multi.ReadAsync<String>()).ToList();
+                    airport.Airplanes = (await multi.ReadAsync<String>()).ToList();
                 return airport;
             }
         }
@@ -40,7 +40,7 @@ namespace Airplanes.Repositories
                 var multi = await connection.QueryMultipleAsync(sqlQuery, new { Id = id });
                 var airplane = await multi.ReadSingleOrDefaultAsync<AirportOfAirplane>();
                 if (airplane != null)
-                    airplane.Airport = (await multi.ReadAsync<String>()).ToList();
+                    airplane.Airports = (await multi.ReadAsync<String>()).ToList();
                 return airplane;
             }
         }

@@ -2931,11 +2931,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CJCU-CC\\Desktop\\api\\Airplanes\\Airplanes.csproj",
+      "projectUniqueName": "C:\\Users\\CJCU-CC\\Desktop\\新增資料夾\\Airplanes\\Airplanes.csproj",
       "projectName": "Airplanes",
-      "projectPath": "C:\\Users\\CJCU-CC\\Desktop\\api\\Airplanes\\Airplanes.csproj",
+      "projectPath": "C:\\Users\\CJCU-CC\\Desktop\\新增資料夾\\Airplanes\\Airplanes.csproj",
       "packagesPath": "C:\\Users\\CJCU-CC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CJCU-CC\\Desktop\\api\\Airplanes\\obj\\",
+      "outputPath": "C:\\Users\\CJCU-CC\\Desktop\\新增資料夾\\Airplanes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CJCU-CC\\AppData\\Roaming\\NuGet\\NuGet.Config",

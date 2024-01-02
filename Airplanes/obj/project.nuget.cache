@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t6/mwdYMnTs6dh3B0/N3KdI0vYlow513B3FrYTefNMzHH6rwf6lp3XVWqAJKaeU8Bu+SaEgDewseRTIWmBU1rA==",
+  "dgSpecHash": "RuQcLxdMEMTJdp+MkbCvbDG4FlzWDOOBM7QNpcOM/qClg0YyzcKzCdFJ1NWJSprrQAsJJ/2X9kCjgRv0vEu2eQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\CJCU-CC\\Desktop\\api\\Airplanes\\Airplanes.csproj",
+  "projectFilePath": "C:\\Users\\CJCU-CC\\Desktop\\新增資料夾\\Airplanes\\Airplanes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CJCU-CC\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\CJCU-CC\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
